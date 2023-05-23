@@ -1,0 +1,22 @@
+<p>login works!</p>
+<input type="text" [(ngModel)]="input1" id="time" name="time">
+<!-- <ngx-timepicker [(ngModel)]="input1"></ngx-timepicker> -->
+
+<p>{{input1|timeFormat}}</p>
+<input type="text" [(ngModel)]="input2" id="time" name="time">
+<p>{{input2|timeConveration}}</p>
+<!-- <mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker" [(ngModel)]="last">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+<mat-form-field appearance="outline" >
+  <input matInput [matDatepicker]="picker" [(ngModel)]="last">
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+<p>{{last|lastSeen}} ago</p>

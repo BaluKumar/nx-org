@@ -1,0 +1,13 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.commentBox{
+  width: 70%;
+}
+.commentBox button{
+  width: 100px;
+}
+.commentBox textarea{
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
